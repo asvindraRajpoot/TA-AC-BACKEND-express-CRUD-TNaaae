@@ -16,15 +16,16 @@ app.set('views',__dirname+'/views');
 
 //middlewares
 app.use(express.json());
-var indexPath=require('./routes/index');
-var studentsPath=require('./routes/studentDetail');
+app.use(express.urlencoded({extended:false}));
+var indexRouter=require('./routes/index');
+var studentsRouter=require('./routes/students');
 
 
 
 
 //routing middlewares
-app.use('/',indexPath);
-app.use('/students',studentsPath);
+app.use('/',indexRouter);
+app.use('/students',studentsRouter);
 
 
 
