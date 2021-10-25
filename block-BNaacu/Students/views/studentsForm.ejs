@@ -7,13 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Welcome to index.
-    </h1>
-
-    <li>
-        <%= student.name %>
-        <%= student.email %>
-    </li>
+    <form action="/students" method="POST">
+        <input type="text" name="name" id="">
+        <input type="email" name="email" id="">
+        <input type="number" name="age" id="">
+        <input type="submit" value="Add students">
+    </form>
 </body>
 </html>

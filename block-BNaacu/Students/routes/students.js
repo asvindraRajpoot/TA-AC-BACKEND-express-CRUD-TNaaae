@@ -6,11 +6,11 @@ var router=express.Router();
 
 router.get('/new',(req,res)=>{
 
-    res.send('it is new student');
+    res.render('studentsForm');
 })
 
 router.post('/',(req,res)=>{
-    res.send('it is post ');
+    res.send(req.body);
 })
 
 router.get('/',(req,res)=>{
