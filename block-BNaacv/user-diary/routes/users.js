@@ -25,6 +25,9 @@ router.get('/',(req,res)=>{
 router.delete('/:id',(req,res)=>{
     res.render('singleUser',{user:{name:'asvindra'}});
 })
+router.get('/:id/edit',(req,res)=>{
+    res.render('singleUser',{user:{name:'asvindra'}});
+})
 
 router.put('/:id',(req,res)=>{
     res.render('singleUser',{user:{name:'asvindra'}});
